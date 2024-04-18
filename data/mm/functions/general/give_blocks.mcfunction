@@ -1,7 +1,7 @@
-give @s purpur_block{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Blank Pattern","italic":false}'}} 64
-give @s dead_tube_coral_block{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Square Pattern","italic":false}'}} 64
-give @s dead_brain_coral_block{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Bird Pattern","italic":false}'}} 64
-give @s magenta_glazed_terracotta{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Triangle Pattern","italic":false}'}} 64
-give @s brown_glazed_terracotta{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Hook Pattern","italic":false}'}} 64
-give @s cyan_glazed_terracotta{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Squiggle Pattern","italic":false}'}} 64
-give @s orange_glazed_terracotta{CanPlaceOn:["minecraft:stripped_spruce_log"],display:{Name:'{"text":"Corner Pattern","italic":false}'}} 64
+give @s purpur_block[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Blank Pattern","italic":false}'] 64
+give @s dead_tube_coral_block[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Square Pattern","italic":false}'] 64
+give @s dead_brain_coral_block[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Bird Pattern","italic":false}'] 64
+give @s magenta_glazed_terracotta[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Triangle Pattern","italic":false}'] 64
+give @s brown_glazed_terracotta[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Hook Pattern","italic":false}'] 64
+give @s cyan_glazed_terracotta[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Squiggle Pattern","italic":false}'] 64
+give @s orange_glazed_terracotta[can_place_on={predicates:[{blocks:"stripped_spruce_log"},{blocks:"netherite_block"}]},custom_name='{"text":"Corner Pattern","italic":false}'] 64

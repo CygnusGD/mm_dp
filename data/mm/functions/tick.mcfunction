@@ -2,7 +2,7 @@
 execute if score $game_live data matches 1 run function mm:game/tick
 
 #rotate tool
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{rotate_tool:1}}},scores={rotate_coas=1..}] at @s positioned ~ ~1.67 ~ run function mm:rotate_tool/use
+execute as @a[scores={rotate_coas=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {rotate_tool: 1}}}}] at @s positioned ~ ~1.67 ~ run function mm:rotate_tool/use
 scoreboard players set @a rotate_coas 0
 
 #first login setup

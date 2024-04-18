@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Hand Drill","color":"white","italic":false}',Lore:['{"text":"Rotates pattern blocks","color":"gray","italic":false}']},CustomModelData:1,rotate_tool:1} 1

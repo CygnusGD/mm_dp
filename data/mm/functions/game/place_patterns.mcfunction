@@ -1,62 +1,63 @@
 fill 93 54 99 93 58 103 air
 fill 79 54 99 79 58 103 air
-execute if score $rand data matches 1 run function mm:game/place_patterns/1
-execute if score $rand data matches 2 run function mm:game/place_patterns/2
-execute if score $rand data matches 3 run function mm:game/place_patterns/3
-execute if score $rand data matches 4 run function mm:game/place_patterns/4
-execute if score $rand data matches 5 run function mm:game/place_patterns/5
-execute if score $rand data matches 6 run function mm:game/place_patterns/6
-execute if score $rand data matches 7 run function mm:game/place_patterns/7
-execute if score $rand data matches 8 run function mm:game/place_patterns/8
-execute if score $rand data matches 9 run function mm:game/place_patterns/9
-execute if score $rand data matches 10 run function mm:game/place_patterns/10
-execute if score $rand data matches 11 run function mm:game/place_patterns/11
-execute if score $rand data matches 12 run function mm:game/place_patterns/12
-execute if score $rand data matches 13 run function mm:game/place_patterns/13
-execute if score $rand data matches 14 run function mm:game/place_patterns/14
-execute if score $rand data matches 15 run function mm:game/place_patterns/15
-execute if score $rand data matches 16 run function mm:game/place_patterns/16
-execute if score $rand data matches 17 run function mm:game/place_patterns/17
-execute if score $rand data matches 18 run function mm:game/place_patterns/18
-execute if score $rand data matches 19 run function mm:game/place_patterns/19
-execute if score $rand data matches 20 run function mm:game/place_patterns/20
-execute if score $rand data matches 21 run function mm:game/place_patterns/21
-execute if score $rand data matches 22 run function mm:game/place_patterns/22
-execute if score $rand data matches 23 run function mm:game/place_patterns/23
-execute if score $rand data matches 24 run function mm:game/place_patterns/24
-execute if score $rand data matches 25 run function mm:game/place_patterns/25
-execute if score $rand data matches 26 run function mm:game/place_patterns/26
-execute if score $rand data matches 27 run function mm:game/place_patterns/27
-execute if score $rand data matches 28 run function mm:game/place_patterns/28
-execute if score $rand data matches 29 run function mm:game/place_patterns/29
-execute if score $rand data matches 30 run function mm:game/place_patterns/30
-execute if score $rand data matches 31 run function mm:game/place_patterns/31
-execute if score $rand data matches 32 run function mm:game/place_patterns/32
-execute if score $rand data matches 33 run function mm:game/place_patterns/33
-execute if score $rand data matches 34 run function mm:game/place_patterns/34
-execute if score $rand data matches 35 run function mm:game/place_patterns/35
-execute if score $rand data matches 36 run function mm:game/place_patterns/36
-execute if score $rand data matches 37 run function mm:game/place_patterns/37
-execute if score $rand data matches 38 run function mm:game/place_patterns/38
-execute if score $rand data matches 39 run function mm:game/place_patterns/39
-execute if score $rand data matches 40 run function mm:game/place_patterns/40
-execute if score $rand data matches 41 run function mm:game/place_patterns/41
-execute if score $rand data matches 42 run function mm:game/place_patterns/42
-execute if score $rand data matches 43 run function mm:game/place_patterns/43
-execute if score $rand data matches 44 run function mm:game/place_patterns/44
-execute if score $rand data matches 45 run function mm:game/place_patterns/45
-execute if score $rand data matches 46 run function mm:game/place_patterns/46
-execute if score $rand data matches 47 run function mm:game/place_patterns/47
-execute if score $rand data matches 48 run function mm:game/place_patterns/48
-execute if score $rand data matches 49 run function mm:game/place_patterns/49
-execute if score $rand data matches 50 run function mm:game/place_patterns/50
-execute if score $rand data matches 51 run function mm:game/place_patterns/51
-execute if score $rand data matches 52 run function mm:game/place_patterns/52
-execute if score $rand data matches 53 run function mm:game/place_patterns/53
-execute if score $rand data matches 54 run function mm:game/place_patterns/54
-execute if score $rand data matches 55 run function mm:game/place_patterns/55
-execute if score $rand data matches 56 run function mm:game/place_patterns/56
-execute if score $rand data matches 57 run function mm:game/place_patterns/57
-execute if score $rand data matches 58 run function mm:game/place_patterns/58
-execute if score $rand data matches 59 run function mm:game/place_patterns/59
-execute if score $rand data matches 60 run function mm:game/place_patterns/60
+#yes i know i can use storage for this, i didn't want to (it's past me's fault for not separating by difficulty ok)
+execute if score $rand data matches 1 run function mm:game/place_patterns_real {pattern_id:1}
+execute if score $rand data matches 2 run function mm:game/place_patterns_real {pattern_id:2}
+execute if score $rand data matches 3 run function mm:game/place_patterns_real {pattern_id:3}
+execute if score $rand data matches 4 run function mm:game/place_patterns_real {pattern_id:4}
+execute if score $rand data matches 5 run function mm:game/place_patterns_real {pattern_id:5}
+execute if score $rand data matches 6 run function mm:game/place_patterns_real {pattern_id:6}
+execute if score $rand data matches 7 run function mm:game/place_patterns_real {pattern_id:7}
+execute if score $rand data matches 8 run function mm:game/place_patterns_real {pattern_id:8}
+execute if score $rand data matches 9 run function mm:game/place_patterns_real {pattern_id:9}
+execute if score $rand data matches 10 run function mm:game/place_patterns_real {pattern_id:10}
+execute if score $rand data matches 11 run function mm:game/place_patterns_real {pattern_id:11}
+execute if score $rand data matches 12 run function mm:game/place_patterns_real {pattern_id:12}
+execute if score $rand data matches 13 run function mm:game/place_patterns_real {pattern_id:13}
+execute if score $rand data matches 14 run function mm:game/place_patterns_real {pattern_id:14}
+execute if score $rand data matches 15 run function mm:game/place_patterns_real {pattern_id:15}
+execute if score $rand data matches 16 run function mm:game/place_patterns_real {pattern_id:16}
+execute if score $rand data matches 17 run function mm:game/place_patterns_real {pattern_id:17}
+execute if score $rand data matches 18 run function mm:game/place_patterns_real {pattern_id:18}
+execute if score $rand data matches 19 run function mm:game/place_patterns_real {pattern_id:19}
+execute if score $rand data matches 20 run function mm:game/place_patterns_real {pattern_id:20}
+execute if score $rand data matches 21 run function mm:game/place_patterns_real {pattern_id:21}
+execute if score $rand data matches 22 run function mm:game/place_patterns_real {pattern_id:22}
+execute if score $rand data matches 23 run function mm:game/place_patterns_real {pattern_id:23}
+execute if score $rand data matches 24 run function mm:game/place_patterns_real {pattern_id:24}
+execute if score $rand data matches 25 run function mm:game/place_patterns_real {pattern_id:25}
+execute if score $rand data matches 26 run function mm:game/place_patterns_real {pattern_id:26}
+execute if score $rand data matches 27 run function mm:game/place_patterns_real {pattern_id:27}
+execute if score $rand data matches 28 run function mm:game/place_patterns_real {pattern_id:28}
+execute if score $rand data matches 29 run function mm:game/place_patterns_real {pattern_id:29}
+execute if score $rand data matches 30 run function mm:game/place_patterns_real {pattern_id:30}
+execute if score $rand data matches 31 run function mm:game/place_patterns_real {pattern_id:31}
+execute if score $rand data matches 32 run function mm:game/place_patterns_real {pattern_id:32}
+execute if score $rand data matches 33 run function mm:game/place_patterns_real {pattern_id:33}
+execute if score $rand data matches 34 run function mm:game/place_patterns_real {pattern_id:34}
+execute if score $rand data matches 35 run function mm:game/place_patterns_real {pattern_id:35}
+execute if score $rand data matches 36 run function mm:game/place_patterns_real {pattern_id:36}
+execute if score $rand data matches 37 run function mm:game/place_patterns_real {pattern_id:37}
+execute if score $rand data matches 38 run function mm:game/place_patterns_real {pattern_id:38}
+execute if score $rand data matches 39 run function mm:game/place_patterns_real {pattern_id:39}
+execute if score $rand data matches 40 run function mm:game/place_patterns_real {pattern_id:40}
+execute if score $rand data matches 41 run function mm:game/place_patterns_real {pattern_id:41}
+execute if score $rand data matches 42 run function mm:game/place_patterns_real {pattern_id:42}
+execute if score $rand data matches 43 run function mm:game/place_patterns_real {pattern_id:43}
+execute if score $rand data matches 44 run function mm:game/place_patterns_real {pattern_id:44}
+execute if score $rand data matches 45 run function mm:game/place_patterns_real {pattern_id:45}
+execute if score $rand data matches 46 run function mm:game/place_patterns_real {pattern_id:46}
+execute if score $rand data matches 47 run function mm:game/place_patterns_real {pattern_id:47}
+execute if score $rand data matches 48 run function mm:game/place_patterns_real {pattern_id:48}
+execute if score $rand data matches 49 run function mm:game/place_patterns_real {pattern_id:49}
+execute if score $rand data matches 50 run function mm:game/place_patterns_real {pattern_id:50}
+execute if score $rand data matches 51 run function mm:game/place_patterns_real {pattern_id:51}
+execute if score $rand data matches 52 run function mm:game/place_patterns_real {pattern_id:52}
+execute if score $rand data matches 53 run function mm:game/place_patterns_real {pattern_id:53}
+execute if score $rand data matches 54 run function mm:game/place_patterns_real {pattern_id:54}
+execute if score $rand data matches 55 run function mm:game/place_patterns_real {pattern_id:55}
+execute if score $rand data matches 56 run function mm:game/place_patterns_real {pattern_id:56}
+execute if score $rand data matches 57 run function mm:game/place_patterns_real {pattern_id:57}
+execute if score $rand data matches 58 run function mm:game/place_patterns_real {pattern_id:58}
+execute if score $rand data matches 59 run function mm:game/place_patterns_real {pattern_id:59}
+execute if score $rand data matches 60 run function mm:game/place_patterns_real {pattern_id:60}

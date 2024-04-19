@@ -90,6 +90,8 @@ tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6,tag=!p7,tag=!p8,tag=!spec
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6,tag=!p7,tag=!p8,tag=!spectator,team=ready] add p7
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6,tag=!p7,tag=!p8,tag=!spectator,team=ready] add p8
 
+tag @a[team=ready] add alive
+
 #tp all players
 tp @a[tag=p1] 88.50 66.00 71.50 -90 0
 tp @a[tag=p2] 88.50 66.00 81.50 -90 0

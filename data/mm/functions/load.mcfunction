@@ -13,6 +13,7 @@ scoreboard players set $round_live data 0
 scoreboard players set $game_live data 0
 scoreboard players set $game_starting data 0
 scoreboard players set $timer_master data 45
+scoreboard players set $life_count data 3
 
 scoreboard objectives add end_game trigger
 scoreboard objectives add cancel_start trigger
@@ -37,9 +38,6 @@ team leave @a
 #lobby signs
 function mm:lobby/reset_signs
 
-setblock 0 63 12 spruce_wall_sign[facing=north] replace
-setblock 0 63 12 oak_wall_sign[facing=north]{front_text:{messages:['{"text":""}', '{"text":"Timer:","clickEvent":{"action":"run_command","value":"function mm:lobby/change_timer"}}', '[{"score":{"name":"$timer_master","objective":"data"}},{"text":" seconds"}]', '{"text":""}'], has_glowing_text: true, color: "white"}} replace
-
 #gamerules
 gamerule doDaylightCycle false
 time set noon
@@ -49,3 +47,13 @@ gamerule sendCommandFeedback false
 gamerule doFireTick false
 gamerule randomTickSpeed 0
 gamerule doMobSpawning false
+
+execute if score $life_count data matches 10 as @a run attribute @s minecraft:generic.max_health base set 20
+execute if score $life_count data matches 7 as @a run attribute @s minecraft:generic.max_health base set 14
+execute if score $life_count data matches 5 as @a run attribute @s minecraft:generic.max_health base set 10
+execute if score $life_count data matches 4 as @a run attribute @s minecraft:generic.max_health base set 8
+execute if score $life_count data matches 3 as @a run attribute @s minecraft:generic.max_health base set 6
+execute if score $life_count data matches 2 as @a run attribute @s minecraft:generic.max_health base set 4
+execute if score $life_count data matches 1 as @a run attribute @s minecraft:generic.max_health base set 2
+
+effect give @a minecraft:regeneration 1 255 true

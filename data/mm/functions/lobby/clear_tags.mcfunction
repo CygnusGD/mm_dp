@@ -8,3 +8,4 @@ tag @a remove p7
 tag @a remove p8
 tag @a remove spectator
 tag @a remove round_finish
+tag @a remove alive

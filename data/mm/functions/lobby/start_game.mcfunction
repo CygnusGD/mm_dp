@@ -119,6 +119,7 @@ schedule function mm:game/pre_start_round 1s
 scoreboard players set $votes data 0
 scoreboard players set $eligible_voters data 0
 
+#past me is an idiot why didn't i have one tag for all living players
 scoreboard players enable @a[tag=p1] end_game
 scoreboard players enable @a[tag=p2] end_game
 scoreboard players enable @a[tag=p3] end_game
@@ -127,3 +128,7 @@ scoreboard players enable @a[tag=p5] end_game
 scoreboard players enable @a[tag=p6] end_game
 scoreboard players enable @a[tag=p7] end_game
 scoreboard players enable @a[tag=p8] end_game
+
+scoreboard players operation @a[tag=alive] lives = $life_count data
+
+effect clear @a resistance

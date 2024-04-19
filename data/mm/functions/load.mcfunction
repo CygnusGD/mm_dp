@@ -18,6 +18,10 @@ scoreboard players set $life_count data 3
 scoreboard objectives add end_game trigger
 scoreboard objectives add cancel_start trigger
 
+scoreboard objectives add lives dummy
+scoreboard objectives add health health
+scoreboard objectives setdisplay list health
+
 function mm:lobby/clear_tags
 
 function mm:game/setup/reset_pattern_markers

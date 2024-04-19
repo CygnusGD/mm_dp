@@ -1,4 +1,2 @@
 make pattern blocks placeable on other pattern blocks (will have to add invis walls to front)
-make settings disappear when game is starting or make them not clickable
-lives system
 better randomization

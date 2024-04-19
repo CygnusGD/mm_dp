@@ -13,3 +13,13 @@ execute as @e[type=item,x=-15,y=60,z=-15,dx=30,dy=30,dz=30] run data modify enti
 
 execute as @a[x=-15,y=60,z=-15,dx=30,dy=30,dz=30] run scoreboard players enable @s cancel_start
 execute as @a if score @s cancel_start matches 1.. run function mm:lobby/cancel_start
+
+#block blocks
+fill 92 65 68 92 69 74 light
+fill 92 65 78 92 69 84 light
+fill 92 65 88 92 69 94 light
+fill 92 65 98 92 69 104 light
+fill 80 65 68 80 69 74 light
+fill 80 65 78 80 69 84 light
+fill 80 65 88 80 69 94 light
+fill 80 65 98 80 69 104 light

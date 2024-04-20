@@ -18,3 +18,5 @@ execute if score $life_count data matches 1 as @a run attribute @s minecraft:gen
 effect give @a minecraft:regeneration 1 255 true
 
 #why did i make it like this ugh
+
+execute as @a at @s run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 0.5 1.5

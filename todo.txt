@@ -1,0 +1,2 @@
+make pattern blocks placeable on other pattern blocks (will have to add invis walls to front)
+better randomization

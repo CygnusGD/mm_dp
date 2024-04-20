@@ -15,7 +15,9 @@ scoreboard players add $round data 1
 scoreboard players operation $timer data = $timer_master data
 
 #random stuff be like
-function mm:game/pick_random_pattern
+execute if score $round data matches ..3 run scoreboard players set $difficulty data 1
+execute if score $round data matches 4..8 run scoreboard players set $difficulty data 2
+execute if score $round data matches 10.. run scoreboard players set $difficulty data 3
 schedule function mm:game/place_patterns 10t
 schedule function mm:game/countdown/ready 10t
 

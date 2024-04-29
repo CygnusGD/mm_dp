@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick[custom_name='{"text":"Hand Drill","color":"white","italic":false}',lore=['{"text":"Rotates pattern blocks","color":"gray","italic":false}'],custom_model_data=1,custom_data={rotate_tool:1}] 1
+item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"text":"Hand Drill","color":"white","italic":false}',lore=['{"text":"Rotates pattern blocks","color":"gray","italic":false}'],custom_model_data=1,custom_data={rotate_tool:1}] 1

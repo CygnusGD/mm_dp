@@ -1,7 +1,7 @@
-give @s purpur_block[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Blank Pattern","italic":false}'] 64
-give @s dead_tube_coral_block[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Square Pattern","italic":false}'] 64
-give @s dead_brain_coral_block[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Bird Pattern","italic":false}'] 64
-give @s magenta_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Triangle Pattern","italic":false}'] 64
-give @s brown_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Hook Pattern","italic":false}'] 64
-give @s cyan_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Squiggle Pattern","italic":false}'] 64
-give @s orange_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Corner Pattern","italic":false}'] 64
+item replace entity @s hotbar.2 with purpur_block[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Blank Pattern","italic":false}'] 64
+item replace entity @s hotbar.3 with dead_tube_coral_block[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Square Pattern","italic":false}'] 64
+item replace entity @s hotbar.4 with dead_brain_coral_block[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Bird Pattern","italic":false}'] 64
+item replace entity @s hotbar.5 with magenta_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Triangle Pattern","italic":false}'] 64
+item replace entity @s hotbar.6 with brown_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Hook Pattern","italic":false}'] 64
+item replace entity @s hotbar.7 with cyan_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Squiggle Pattern","italic":false}'] 64
+item replace entity @s hotbar.8 with orange_glazed_terracotta[can_place_on={predicates:[{blocks:"#mm:placeable"}],show_in_tooltip:false},custom_name='{"text":"Corner Pattern","italic":false}'] 64

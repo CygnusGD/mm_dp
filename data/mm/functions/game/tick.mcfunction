@@ -8,13 +8,13 @@ execute as @e[type=marker,tag=6,tag=!round_finish] at @s if blocks ~ ~ ~ ~ ~4 ~4
 execute as @e[type=marker,tag=7,tag=!round_finish] at @s if blocks ~ ~ ~ ~ ~4 ~4 79 54 99 all run execute as @a[tag=p7] at @s run function mm:game/round_finish/p7
 execute as @e[type=marker,tag=8,tag=!round_finish] at @s if blocks ~ ~ ~ ~ ~4 ~4 79 54 99 all run execute as @a[tag=p8] at @s run function mm:game/round_finish/p8
 
-#check for logout
-execute as @a if score @s just_left matches 1.. run function mm:game/logout_check/logout_check
-
 function mm:game/quick_items/quick_items
 
 execute if score $round_live data matches 1 run title @a actionbar [{"score":{"name":"$timer","objective":"data"}},{"text":" seconds remaining..."}]
 
-execute if score $timer data matches ..0 run function mm:game/time_out/time_out
+execute if score $timer data matches ..0 unless score $time_out_has_happened data matches 1.. run function mm:game/time_out/time_out
 
 execute as @a[scores={end_game=1..}] run function mm:game/vote
+
+execute store result score $alive_players_accurate data run execute if entity @a[tag=alive]
+execute if score $alive_players_accurate data < $living_players data run function mm:game/logout

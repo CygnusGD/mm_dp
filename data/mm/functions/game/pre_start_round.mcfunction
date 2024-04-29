@@ -1,3 +1,5 @@
+scoreboard players reset $time_out_has_happened
+
 #set lp-1 to lp
 scoreboard players operation $living_players_minus_one data = $living_players data
 #remove 1 from lp-1 to make it actually lp-1

@@ -26,5 +26,3 @@ execute if score $life_count data matches 2 run attribute @s minecraft:generic.m
 execute if score $life_count data matches 1 run attribute @s minecraft:generic.max_health base set 2
 
 effect give @s minecraft:regeneration 1 255 true
-
-tellraw @a "test"

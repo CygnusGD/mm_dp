@@ -1,2 +1,2 @@
-$execute as @e[type=marker,tag=pattern_check_east] at @s run place template minecraft:pattern_$(pattern_id)_east
-$execute as @e[type=marker,tag=pattern_check_west] at @s run place template minecraft:pattern_$(pattern_id)_west
+$execute as @e[type=marker,tag=pattern_check_east] at @s run place template mm:pattern_$(pattern_id)_east
+$execute as @e[type=marker,tag=pattern_check_west] at @s run place template mm:pattern_$(pattern_id)_west

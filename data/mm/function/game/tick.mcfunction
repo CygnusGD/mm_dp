@@ -10,11 +10,11 @@ execute as @e[type=marker,tag=8,tag=!round_finish] at @s if blocks ~ ~ ~ ~ ~4 ~4
 
 function mm:game/quick_items/quick_items
 
-execute if score $round_live data matches 1 run title @a actionbar [{"score":{"name":"$timer","objective":"data"}},{"text":" seconds remaining..."}]
+execute if score $round_live data matches 1 run title @a[tag=!in_solo_game] actionbar [{"score":{"name":"$timer","objective":"data"}},{"text":" seconds remaining..."}]
 
 execute if score $timer data matches ..0 unless score $time_out_has_happened data matches 1.. run function mm:game/time_out/time_out
 
-execute as @a[scores={end_game=1..}] run function mm:game/vote
+execute as @a[tag=!in_solo_game,scores={end_game=1..}] run function mm:game/vote
 
 execute store result score $alive_players_accurate data run execute if entity @a[tag=alive]
 execute if score $alive_players_accurate data < $living_players data run function mm:game/logout

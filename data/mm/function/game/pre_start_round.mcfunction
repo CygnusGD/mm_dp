@@ -9,7 +9,7 @@ scoreboard players set $finished_players data 0
 
 #reset stuff idk
 schedule clear mm:game/timer
-clear @a
+clear @a[tag=!in_solo_game]
 
 #increase round number
 scoreboard players add $round data 1
@@ -25,22 +25,22 @@ schedule function mm:game/countdown/ready 10t
 
 #trigger game end stuff
 scoreboard players set $eligible_voters data 0
-execute as @a[tag=p1,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p2,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p3,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p4,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p5,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p6,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p7,tag=!spectator] run scoreboard players add $eligible_voters data 1
-execute as @a[tag=p8,tag=!spectator] run scoreboard players add $eligible_voters data 1
-scoreboard players enable @a[tag=p1,tag=!spectator] end_game
-scoreboard players enable @a[tag=p2,tag=!spectator] end_game
-scoreboard players enable @a[tag=p3,tag=!spectator] end_game
-scoreboard players enable @a[tag=p4,tag=!spectator] end_game
-scoreboard players enable @a[tag=p5,tag=!spectator] end_game
-scoreboard players enable @a[tag=p6,tag=!spectator] end_game
-scoreboard players enable @a[tag=p7,tag=!spectator] end_game
-scoreboard players enable @a[tag=p8,tag=!spectator] end_game
+execute as @a[tag=p1,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p2,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p3,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p4,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p5,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p6,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p7,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+execute as @a[tag=p8,tag=!spectator,tag=!in_solo_game] run scoreboard players add $eligible_voters data 1
+scoreboard players enable @a[tag=p1,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p2,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p3,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p4,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p5,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p6,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p7,tag=!spectator,tag=!in_solo_game] end_game
+scoreboard players enable @a[tag=p8,tag=!spectator,tag=!in_solo_game] end_game
 
 #i really don't know what this is for
 scoreboard players reset @a[tag=spectator]

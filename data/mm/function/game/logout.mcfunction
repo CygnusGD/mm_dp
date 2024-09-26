@@ -20,8 +20,8 @@ schedule clear mm:game/lobby_return/0s
 function mm:game/lobby_return/0s
 
 scoreboard players set $game_live data 0
-scoreboard players reset @a end_game
+scoreboard players reset @a[tag=!in_solo_game] end_game
 scoreboard players set $votes data 0
 scoreboard players set $eligible_voters data 0
 
-tellraw @a [{"text":"[ ","color":"gray","bold":false},{"text":"Someone logged out, so the game ended.","color":"white","bold":false},{"text":" ]","color":"gray","bold":false}]
+tellraw @a[tag=!in_solo_game] [{"text":"[ ","color":"gray","bold":false},{"text":"Someone logged out, so the game ended.","color":"white","bold":false},{"text":" ]","color":"gray","bold":false}]

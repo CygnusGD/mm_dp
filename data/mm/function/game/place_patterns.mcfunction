@@ -6,6 +6,8 @@ execute if score $difficulty data matches ..1 run execute store result score $ra
 execute if score $difficulty data matches 2 run execute store result score $rand data run random value 1..71
 execute if score $difficulty data matches 3.. run execute store result score $rand data run random value 24..80
 
+execute if score $diff_scaling data matches 0 run execute store result score $rand data run random value 1..80
+
 #yes i know i can use storage for this, i didn't want to (it's past me's fault for not separating by difficulty ok)
 #this is bad for many reasons actually
 

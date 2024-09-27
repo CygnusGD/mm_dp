@@ -22,6 +22,11 @@ scoreboard objectives add lives dummy
 scoreboard objectives add health health
 scoreboard objectives setdisplay list health
 
+scoreboard objectives add personal_timer_ticks dummy
+scoreboard objectives add personal_timer_hundredths dummy
+scoreboard objectives add personal_timer_tenths dummy
+scoreboard objectives add personal_timer_seconds dummy
+
 function mm:lobby/clear_tags
 
 function mm:game/setup/reset_pattern_markers
@@ -47,7 +52,7 @@ gamerule doDaylightCycle false
 time set noon
 gamerule commandBlockOutput false
 gamerule logAdminCommands false
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 gamerule doFireTick false
 gamerule randomTickSpeed 0
 gamerule doMobSpawning false

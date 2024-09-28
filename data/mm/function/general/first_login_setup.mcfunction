@@ -12,7 +12,7 @@ gamerule doDaylightCycle false
 time set noon
 gamerule commandBlockOutput false
 gamerule logAdminCommands false
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 gamerule doFireTick false
 gamerule randomTickSpeed 0
 gamerule doMobSpawning false

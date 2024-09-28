@@ -3,6 +3,13 @@ tag @s remove sp2
 tag @s remove sp3
 tag @s remove sp4
 tag @s remove in_solo_game
+tag @s remove between_round_delay
+tag @s remove delay_active
+tag @s remove personal_timer_active
+tag @s remove solo_countdown_3
+tag @s remove solo_countdown_2
+tag @s remove solo_countdown_1
+tag @s remove solo_countdown_go
 team leave @s
 title @s actionbar ""
 tp @s 0.5 64 0.5 0 0

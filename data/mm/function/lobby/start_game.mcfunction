@@ -28,6 +28,15 @@ tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6,tag=!p7,tag=!p8,tag=!spec
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6,tag=!p7,tag=!p8,tag=!spectator,tag=!in_solo_game,team=ready] add p7
 tag @r[tag=!p1,tag=!p2,tag=!p3,tag=!p4,tag=!p5,tag=!p6,tag=!p7,tag=!p8,tag=!spectator,tag=!in_solo_game,team=ready] add p8
 
+tag @a[tag=p1] add in_standard_game
+tag @a[tag=p2] add in_standard_game
+tag @a[tag=p3] add in_standard_game
+tag @a[tag=p4] add in_standard_game
+tag @a[tag=p5] add in_standard_game
+tag @a[tag=p6] add in_standard_game
+tag @a[tag=p7] add in_standard_game
+tag @a[tag=p8] add in_standard_game
+
 tag @a[team=ready] add alive
 
 #tp all players

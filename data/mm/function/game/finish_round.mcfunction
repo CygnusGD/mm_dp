@@ -1,3 +1,5 @@
+execute as @a[tag=in_standard_game] run tag @s remove personal_timer_active
+
 #set lp-1 to lp
 scoreboard players operation $living_players_minus_one data = $living_players data
 #subtract 1 from lp to get lp-1

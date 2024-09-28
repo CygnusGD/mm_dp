@@ -10,6 +10,7 @@ execute if score $diff_scaling data matches 0 run execute store result score $ra
 
 #yes i know i can use storage for this, i didn't want to (it's past me's fault for not separating by difficulty ok)
 #this is bad for many reasons actually
+#third time revisiting this and it's still just as bad
 
 #easy
 execute if score $rand data matches 1 run function mm:game/place_patterns_real {pattern_id:1}

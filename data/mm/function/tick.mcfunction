@@ -1,3 +1,6 @@
+#personal timer
+execute as @a[tag=personal_timer_active] run function mm:general/personal_timer/tick
+
 #tick offshoots
 execute if score $game_live data matches 1 run function mm:game/tick
 

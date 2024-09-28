@@ -27,6 +27,10 @@ scoreboard objectives add personal_timer_hundredths dummy
 scoreboard objectives add personal_timer_tenths dummy
 scoreboard objectives add personal_timer_seconds dummy
 
+scoreboard objectives add solo_timer dummy
+scoreboard objectives add solo_round dummy
+scoreboard objectives add solo_rand dummy
+
 function mm:lobby/clear_tags
 
 function mm:game/setup/reset_pattern_markers
@@ -43,6 +47,10 @@ team modify spectator prefix "[Spectator] "
 team modify spectator color blue
 
 team leave @a
+
+team add in_solo_game
+team modify in_solo_game prefix "[Solo] "
+team modify in_solo_game color red
 
 #lobby signs
 function mm:lobby/reset_signs

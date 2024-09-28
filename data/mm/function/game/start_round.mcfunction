@@ -9,7 +9,7 @@ scoreboard players set $round_live data 1
 scoreboard players operation $timer data = $timer_master data
 schedule function mm:game/timer 1s
 
-execute as @a[tag=!spectator] run function mm:general/reset_game_inv
+execute as @a[tag=!spectator,tag=!in_solo_game] run function mm:general/reset_game_inv
 
 #place comparisons
 #i was gonna use storage for this but it didn't work so this is what we have now
@@ -100,3 +100,6 @@ execute if score $rand data matches 77 run function mm:game/place_comparisons {p
 execute if score $rand data matches 78 run function mm:game/place_comparisons {pattern_id:63}
 execute if score $rand data matches 79 run function mm:game/place_comparisons {pattern_id:64}
 execute if score $rand data matches 80 run function mm:game/place_comparisons {pattern_id:77}
+
+execute as @a[tag=in_standard_game] run function mm:general/personal_timer/reset
+execute as @a[tag=in_standard_game] run tag @s add personal_timer_active

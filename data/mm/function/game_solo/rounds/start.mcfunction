@@ -1,5 +1,8 @@
 tag @s remove solo_countdown_go
 
+scoreboard players set @s solo_timer_counter 0
+tag @s add in_solo_round
+
 function mm:game_solo/stop_delay
 function mm:game_solo/rounds/countdown/go
 function mm:general/reset_game_inv

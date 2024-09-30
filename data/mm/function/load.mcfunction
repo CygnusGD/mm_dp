@@ -31,6 +31,7 @@ scoreboard objectives add solo_timer dummy
 scoreboard objectives add solo_round dummy
 scoreboard objectives add solo_rand dummy
 scoreboard objectives add solo_delay dummy
+scoreboard objectives add solo_timer_counter dummy
 
 function mm:lobby/clear_tags
 

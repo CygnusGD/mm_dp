@@ -10,7 +10,13 @@ tag @s remove solo_countdown_3
 tag @s remove solo_countdown_2
 tag @s remove solo_countdown_1
 tag @s remove solo_countdown_go
+tag @s remove in_solo_round
+tag @s remove back_to_lobby_delay
+tag @s remove lost_solo_game
 team leave @s
+function mm:game_solo/update_player_count
+function mm:game_solo/stop_delay
+
 title @s actionbar ""
 tp @s 0.5 64 0.5 0 0
 function mm:lobby/reset_gm

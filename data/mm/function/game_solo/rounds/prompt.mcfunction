@@ -7,6 +7,8 @@ title @s times 10 20 10
 title @s subtitle {"text":"Memorize the pattern!","color":"#FFFFFF"}
 title @s title [{"text":"Round ","color":"#FFFFFF"},{"score":{"name":"@s","objective":"solo_round"}},{"text":"!"}]
 clear @s
+tellraw @s [{"text":"[ ","color":"gray","bold":false},{"text":"Round ","color":"white"},{"score":{"name":"@s","objective":"solo_round"},"color":"white"},{"text":" ]","color":"gray","bold":false}]
+
 
 execute as @s run function mm:general/give_blocks
 

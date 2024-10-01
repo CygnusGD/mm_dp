@@ -20,3 +20,5 @@ effect give @a[tag=!in_solo_game] minecraft:regeneration 1 255 true
 #why did i make it like this ugh
 
 execute as @a[tag=!in_solo_game] at @s run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 0.5 1.5
+
+execute as @a[tag=winner] run function mm:general/give_crown

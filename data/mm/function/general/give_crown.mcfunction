@@ -1,0 +1,1 @@
+item replace entity @s armor.head with phantom_membrane[custom_name='{"color":"light_purple","italic":false,"text":"Crown"}',lore=['{"bold":false,"color":"gray","italic":true,"text":"You\'re a winner!"}'],custom_model_data=1,enchantments={levels:{"minecraft:binding_curse":1},show_in_tooltip:false},enchantment_glint_override=false] 1

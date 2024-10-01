@@ -1,3 +1,5 @@
+tag @a remove winner
+
 scoreboard players set $game_live data 1
 scoreboard players reset $time_out_has_happened
 

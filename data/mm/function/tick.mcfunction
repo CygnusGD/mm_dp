@@ -4,6 +4,7 @@ execute as @a[tag=personal_timer_active] run function mm:general/personal_timer/
 #tick offshoots
 execute if score $game_live data matches 1 run function mm:game/tick
 function mm:game_solo/tick
+function mm:pattern_editor/tick
 
 #rotate tool
 execute as @a[scores={rotate_coas=1..},nbt={SelectedItem:{components:{"minecraft:custom_data": {rotate_tool: 1}}}}] at @s positioned ~ ~1.67 ~ run function mm:rotate_tool/use

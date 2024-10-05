@@ -27,4 +27,4 @@ execute as @e[type=item,x=193,y=60,z=41,dx=6,dy=20,dz=8] run tp @s @a[tag=sp1,li
 execute as @e[type=item,x=193,y=60,z=51,dx=6,dy=20,dz=8] run tp @s @a[tag=sp2,limit=1]
 execute as @e[type=item,x=185,y=60,z=41,dx=6,dy=20,dz=8] run tp @s @a[tag=sp3,limit=1]
 execute as @e[type=item,x=185,y=60,z=51,dx=6,dy=20,dz=8] run tp @s @a[tag=sp4,limit=1]
-execute as @e[type=item,x=185,y=60,z=41,dx=20,dy=20,dz=20] run data modify entity @n[type=item] PickupDelay set value 0
+execute as @e[type=item,x=185,y=60,z=41,dx=20,dy=20,dz=20] run data modify entity @s PickupDelay set value 0

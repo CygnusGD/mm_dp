@@ -34,9 +34,13 @@ scoreboard objectives add solo_delay dummy
 scoreboard objectives add solo_timer_counter dummy
 scoreboard objectives add solo_leaderboard dummy
 
+scoreboard objectives add editing_pattern dummy
+
 function mm:lobby/clear_tags
 
 function mm:game/setup/reset_pattern_markers
+
+function mm:pattern_editor/init
 
 schedule clear mm:game/timer
 

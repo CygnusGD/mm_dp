@@ -1,0 +1,3 @@
+execute positioned ~-1 ~5 ~1 run setblock ~ ~ ~ air
+$execute positioned ~-1 ~5 ~1 run setblock ~ ~ ~ oak_wall_sign[facing=west,waterlogged=false]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Save","clickEvent":{"action":"run_command","value":"/function mm:pattern_editor/menu/save {cp_id:$(cp_id)}"}}','{"text":""}','{"text":""}']},is_waxed:0b} replace
+playsound ui.button.click master @s

@@ -1,0 +1,2 @@
+execute if entity @a[tag=in_editor] run tellraw @s [{"text":"[ ","color":"gray","bold":false},{"text":"The pattern editor is currently in use.","color":"#C41616","bold":false},{"text":" ]","color":"gray","bold":false}]
+execute unless entity @a[tag=in_editor] run function mm:pattern_editor/enter

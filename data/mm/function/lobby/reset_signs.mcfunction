@@ -7,6 +7,9 @@ setblock 0 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowi
 execute if score $diff_scaling data matches 1 run setblock -1 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Difficulty Scaling:","clickEvent":{"action":"run_command","value":"/function mm:lobby/diff_scale_off"}}','{"text":"Enabled"}','{"text":""}']}} replace
 execute if score $diff_scaling data matches 0 run setblock -1 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Difficulty Scaling:","clickEvent":{"action":"run_command","value":"/function mm:lobby/diff_scale_on"}}','{"text":"Disabled"}','{"text":""}']}} replace
 
+setblock 1 63 12 minecraft:oak_wall_sign[facing=north,waterlogged=false]{back_text:{color:"black",has_glowing_text:0b,messages:['""','""','""','""']},front_text:{color:"white",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/function mm:pattern_editor/enter_attempt"},"text":"Enter Pattern"}','{"text":"Editor"}','""']},is_waxed:0b}
+
+
 #block pattern 
 
 fill -32 63 4 -20 63 4 air

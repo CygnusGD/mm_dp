@@ -35,4 +35,16 @@ execute positioned 198 62 52 unless blocks ~ ~ ~ ~ ~5 ~6 0 200 0 all run fill ~ 
 execute positioned 186 62 42 unless blocks ~ ~ ~ ~ ~5 ~6 0 200 0 all run fill ~ ~ ~ ~ ~5 ~6 light[level=11] destroy
 execute positioned 186 62 52 unless blocks ~ ~ ~ ~ ~5 ~6 0 200 0 all run fill ~ ~ ~ ~ ~5 ~6 light[level=11] destroy
 
+#block editor blocks
+execute unless blocks 119 27 69 119 31 75 0 0 0 all run fill 119 27 69 119 31 75 light destroy
+execute unless blocks 119 27 81 119 31 87 0 0 0 all run fill 119 27 81 119 31 87 light destroy
+execute unless blocks 119 27 93 119 31 99 0 0 0 all run fill 119 27 93 119 31 99 light destroy
+execute unless blocks 119 27 105 119 31 111 0 0 0 all run fill 119 27 105 119 31 111 light destroy
+execute unless blocks 119 27 117 119 31 123 0 0 0 all run fill 119 27 117 119 31 123 light destroy
+execute unless blocks 119 27 129 119 31 135 0 0 0 all run fill 119 27 129 119 31 135 light destroy
+execute unless blocks 119 27 141 119 31 147 0 0 0 all run fill 119 27 141 119 31 147 light destroy
+execute unless blocks 119 27 153 119 31 159 0 0 0 all run fill 119 27 153 119 31 159 light destroy
+execute unless blocks 119 27 165 119 31 171 0 0 0 all run fill 119 27 165 119 31 171 light destroy
+execute unless blocks 119 27 177 119 31 183 0 0 0 all run fill 119 27 177 119 31 183 light destroy
+
 execute as @a if score @s just_left matches 1.. run function mm:general/relog

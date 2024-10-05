@@ -1,0 +1,2 @@
+setblock 119 32 71 air
+setblock 119 32 71 oak_wall_sign[facing=west,waterlogged=false]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Edit","clickEvent":{"action":"run_command","value":"/function mm:pattern_editor/menu/edit_pattern {cp_id:1}"}}','{"text":""}','{"text":""}']},is_waxed:0b} replace

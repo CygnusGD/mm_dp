@@ -20,7 +20,9 @@ execute as @e[type=marker,tag=8,tag=!round_finish] at @s if score $round_live da
 
 function mm:game/quick_items/quick_items
 
-execute if score $round_live data matches 1 run title @a[tag=!in_solo_game] actionbar [{"score":{"name":"$timer","objective":"data"}},{"text":" seconds remaining..."}]
+execute if score $sprint_mode data matches 0 if score $round_live data matches 1 run title @a[tag=!in_solo_game] actionbar [{"score":{"name":"$timer","objective":"data"}},{"text":" seconds remaining..."}]
+execute if score $sprint_mode data matches 1 if score $round_live data matches 1 run function mm:game/sprint/title with storage mm:data
+
 
 execute if score $timer data matches ..0 unless score $time_out_has_happened data matches 1.. run function mm:game/time_out/time_out
 

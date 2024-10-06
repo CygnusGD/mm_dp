@@ -20,7 +20,8 @@ scoreboard players operation $timer data = $timer_master data
 execute if score $round data matches ..3 run scoreboard players set $difficulty data 1
 execute if score $round data matches 4..8 run scoreboard players set $difficulty data 2
 execute if score $round data matches 10.. run scoreboard players set $difficulty data 3
-schedule function mm:game/place_patterns 10t
+execute if score $sprint_mode data matches 0 run schedule function mm:game/place_patterns 10t
+execute if score $sprint_mode data matches 1 run schedule function mm:game/place_patterns_sprint 10t
 schedule function mm:game/countdown/ready 10t
 
 #trigger game end stuff

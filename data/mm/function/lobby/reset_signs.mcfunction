@@ -8,6 +8,11 @@ execute if score $diff_scaling data matches 1 run setblock -1 64 12 oak_wall_sig
 execute if score $diff_scaling data matches 0 run setblock -1 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Difficulty Scaling:","clickEvent":{"action":"run_command","value":"/function mm:lobby/diff_scale_on"}}','{"text":"Disabled"}','{"text":""}']}} replace
 
 setblock 1 63 12 minecraft:oak_wall_sign[facing=north,waterlogged=false]{back_text:{color:"black",has_glowing_text:0b,messages:['""','""','""','""']},front_text:{color:"white",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/function mm:pattern_editor/enter_attempt"},"text":"Enter Pattern"}','{"text":"Editor"}','""']},is_waxed:0b}
+scoreboard players set $custom_patterns data 1
+setblock 0 63 12 minecraft:oak_wall_sign[facing=north,waterlogged=false]{back_text:{color:"black",has_glowing_text:0b,messages:['""','""','""','""']},front_text:{color:"white",has_glowing_text:1b,messages:['""','{"clickEvent":{"action":"run_command","value":"/function mm:lobby/custom_patterns/enabled_to_all"},"text":"Custom Patterns:"}','{"text":"Enabled"}','""']},is_waxed:0b}
+scoreboard players set $sprint_mode data 0
+setblock -1 63 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Sprint Mode:","clickEvent":{"action":"run_command","value":"/function mm:lobby/sprint_mode/enable"}}','{"text":"Off"}','{"text":""}']}} replace
+
 
 
 #block pattern 

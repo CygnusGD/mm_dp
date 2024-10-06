@@ -37,17 +37,17 @@ title @a[tag=!in_solo_game] times 0 40 15
 execute as @a[tag=!round_finish,tag=!in_solo_game] unless score @s lives matches ..1 run damage @s 2 generic
 execute as @a[tag=!round_finish,tag=!in_solo_game] run scoreboard players remove @s lives 1
 
-#make people who ran out of lives into a spectator (good actually) (and very jank thing that the entire map hinges on yeah that's a good idea do that)
+#titles n stuff
+execute as @a[tag=!in_solo_game] if score $living_players data matches 2.. run title @a[tag=!in_solo_game] title {"text":"Starting Next Round","color":"#007D28"}
+execute as @a[tag=!in_solo_game,tag=!spectator] if score $living_players data matches 2.. unless score @s lives matches ..0 run title @s[tag=!round_finish] title {"text":"You lost a life!","color":"#DD2800"}
+execute as @a[tag=!in_solo_game,tag=!spectator] if score $living_players data matches 2.. if score @s lives matches ..0 run title @s[tag=!round_finish] title {"text":"You were eliminated!","color":"#DD2800"}
+execute as @a[tag=!in_solo_game,tag=!round_finish,tag=!spectator] at @s if score $living_players data matches 2.. run playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~
+
+#make people who ran out of lives into a spectator (good actually) (and very jank thing (above???? this is future cygnus) that the entire map hinges on yeah that's a good idea do that)
 execute as @a[tag=!in_solo_game] if score @s lives matches ..0 run tag @s remove alive
 execute as @a[tag=!in_solo_game] if score @s lives matches ..0 run tag @s add spectator
 execute as @a[tag=!in_solo_game,gamemode=!spectator] if score @s lives matches ..0 run scoreboard players remove $living_players data 1
 execute as @a[tag=!in_solo_game] if score @s lives matches ..0 run gamemode spectator
-
-#if there are 2 or more living players, start another round
-execute if score $living_players data matches 2.. run title @a[tag=!in_solo_game] title {"text":"Starting Next Round","color":"#007D28"}
-execute if score $living_players data matches 2.. unless score @s lives matches ..1 run title @a[tag=!in_solo_game,tag=!round_finish] title {"text":"You lost a life!","color":"#DD2800"}
-execute if score $living_players data matches 2.. if score @s lives matches ..1 run title @a[tag=!in_solo_game,tag=!round_finish] title {"text":"You were eliminated!","color":"#DD2800"}
-execute as @a[tag=!in_solo_game,tag=!round_finish] at @s if score $living_players data matches 2.. run playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~
 
 #if there is 1 living player, end the game cause somebody won
 execute if score $living_players data matches 1 run function mm:game/finish_game

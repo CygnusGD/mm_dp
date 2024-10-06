@@ -6,6 +6,7 @@ execute as @a[tag=!in_solo_game] run function mm:lobby/reset_gm
 function mm:lobby/reset_signs
 clear @a[tag=!in_solo_game]
 execute as @a[tag=!in_solo_game] run function mm:general/give_book
+tag @a[tag=!in_solo_game] remove in_solo_game
 
 execute if score $life_count data matches 10 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 20
 execute if score $life_count data matches 7 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 14

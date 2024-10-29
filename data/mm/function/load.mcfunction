@@ -72,12 +72,12 @@ gamerule doFireTick false
 gamerule randomTickSpeed 0
 gamerule doMobSpawning false
 
-execute if score $life_count data matches 10 as @a run attribute @s minecraft:generic.max_health base set 20
-execute if score $life_count data matches 7 as @a run attribute @s minecraft:generic.max_health base set 14
-execute if score $life_count data matches 5 as @a run attribute @s minecraft:generic.max_health base set 10
-execute if score $life_count data matches 4 as @a run attribute @s minecraft:generic.max_health base set 8
-execute if score $life_count data matches 3 as @a run attribute @s minecraft:generic.max_health base set 6
-execute if score $life_count data matches 2 as @a run attribute @s minecraft:generic.max_health base set 4
-execute if score $life_count data matches 1 as @a run attribute @s minecraft:generic.max_health base set 2
+execute if score $life_count data matches 10 as @a run attribute @s minecraft:max_health base set 20
+execute if score $life_count data matches 7 as @a run attribute @s minecraft:max_health base set 14
+execute if score $life_count data matches 5 as @a run attribute @s minecraft:max_health base set 10
+execute if score $life_count data matches 4 as @a run attribute @s minecraft:max_health base set 8
+execute if score $life_count data matches 3 as @a run attribute @s minecraft:max_health base set 6
+execute if score $life_count data matches 2 as @a run attribute @s minecraft:max_health base set 4
+execute if score $life_count data matches 1 as @a run attribute @s minecraft:max_health base set 2
 
 effect give @a minecraft:regeneration 1 255 true

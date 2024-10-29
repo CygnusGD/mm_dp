@@ -8,13 +8,13 @@ clear @a[tag=!in_solo_game]
 execute as @a[tag=!in_solo_game] run function mm:general/give_book
 tag @a[tag=!in_solo_game] remove in_solo_game
 
-execute if score $life_count data matches 10 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 20
-execute if score $life_count data matches 7 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 14
-execute if score $life_count data matches 5 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 10
-execute if score $life_count data matches 4 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 8
-execute if score $life_count data matches 3 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 6
-execute if score $life_count data matches 2 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 4
-execute if score $life_count data matches 1 as @a[tag=!in_solo_game] run attribute @s minecraft:generic.max_health base set 2
+execute if score $life_count data matches 10 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 20
+execute if score $life_count data matches 7 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 14
+execute if score $life_count data matches 5 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 10
+execute if score $life_count data matches 4 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 8
+execute if score $life_count data matches 3 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 6
+execute if score $life_count data matches 2 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 4
+execute if score $life_count data matches 1 as @a[tag=!in_solo_game] run attribute @s minecraft:max_health base set 2
 
 effect give @a[tag=!in_solo_game] minecraft:regeneration 1 255 true
 

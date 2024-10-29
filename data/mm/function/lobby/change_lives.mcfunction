@@ -13,12 +13,12 @@ setblock 0 64 12 spruce_wall_sign[facing=north] replace
 setblock 0 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Lives:","clickEvent":{"action":"run_command","value":"/function mm:lobby/change_lives"}}','[{"score":{"name":"$life_count","objective":"data"}}]','{"text":""}']}} replace
 
 #yeah this is to avoid doing math
-execute if score $life_count data matches 10 as @a run attribute @s minecraft:generic.max_health base set 20
-execute if score $life_count data matches 7 as @a run attribute @s minecraft:generic.max_health base set 14
-execute if score $life_count data matches 5 as @a run attribute @s minecraft:generic.max_health base set 10
-execute if score $life_count data matches 4 as @a run attribute @s minecraft:generic.max_health base set 8
-execute if score $life_count data matches 3 as @a run attribute @s minecraft:generic.max_health base set 6
-execute if score $life_count data matches 2 as @a run attribute @s minecraft:generic.max_health base set 4
-execute if score $life_count data matches 1 as @a run attribute @s minecraft:generic.max_health base set 2
+execute if score $life_count data matches 10 as @a run attribute @s minecraft:max_health base set 20
+execute if score $life_count data matches 7 as @a run attribute @s minecraft:max_health base set 14
+execute if score $life_count data matches 5 as @a run attribute @s minecraft:max_health base set 10
+execute if score $life_count data matches 4 as @a run attribute @s minecraft:max_health base set 8
+execute if score $life_count data matches 3 as @a run attribute @s minecraft:max_health base set 6
+execute if score $life_count data matches 2 as @a run attribute @s minecraft:max_health base set 4
+execute if score $life_count data matches 1 as @a run attribute @s minecraft:max_health base set 2
 
 effect give @a minecraft:regeneration 1 255 true

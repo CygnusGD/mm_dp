@@ -1,3 +1,4 @@
+scoreboard players set $extra_finishes_bug_fix data 1
 tag @s add round_finish
 execute as @e[type=marker,tag=3] at @s run fill ~ ~ ~ ~ ~4 ~4 lime_stained_glass
 playsound minecraft:entity.player.levelup master @s

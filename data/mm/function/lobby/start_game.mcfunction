@@ -1,3 +1,5 @@
+scoreboard players set $extra_finishes_bug_fix data 0
+
 tag @a remove winner
 
 scoreboard players set $game_live data 1

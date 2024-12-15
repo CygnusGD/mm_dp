@@ -45,3 +45,5 @@ scoreboard players enable @a[tag=p8,tag=!spectator,tag=!in_solo_game] end_game
 
 #i really don't know what this is for
 scoreboard players reset @a[tag=spectator]
+
+scoreboard players set $extra_finishes_bug_fix data 0

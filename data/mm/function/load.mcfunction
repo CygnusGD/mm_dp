@@ -36,6 +36,8 @@ scoreboard objectives add solo_leaderboard dummy
 
 scoreboard objectives add editing_pattern dummy
 
+scoreboard players set $extra_finishes_bug_fix data 0
+
 function mm:lobby/clear_tags
 
 function mm:game/setup/reset_pattern_markers

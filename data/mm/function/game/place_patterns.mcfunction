@@ -1,4 +1,4 @@
-#don't know what these are for tbh
+#fill comparison spots with air
 fill 93 54 99 93 58 103 air
 fill 79 54 99 79 58 103 air
 

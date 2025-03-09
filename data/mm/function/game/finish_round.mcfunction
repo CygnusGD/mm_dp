@@ -1,3 +1,5 @@
+execute if score $finished_players data = $living_players_minus_one data run scoreboard players set $extra_finishes_bug_fix data 1
+
 execute as @a[tag=in_standard_game] run tag @s remove personal_timer_active
 
 #set lp-1 to lp

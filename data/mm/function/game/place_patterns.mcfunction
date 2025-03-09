@@ -8,6 +8,18 @@ execute if score $difficulty data matches 3.. run execute store result score $ra
 
 execute if score $diff_scaling data matches 0 run execute store result score $rand data run random value 1..80
 
+#this might fix the custom patterns bug
+scoreboard players set @e[type=marker,tag=custom_1] data 1
+scoreboard players set @e[type=marker,tag=custom_2] data 2
+scoreboard players set @e[type=marker,tag=custom_3] data 3
+scoreboard players set @e[type=marker,tag=custom_4] data 4
+scoreboard players set @e[type=marker,tag=custom_5] data 5
+scoreboard players set @e[type=marker,tag=custom_6] data 6
+scoreboard players set @e[type=marker,tag=custom_7] data 7
+scoreboard players set @e[type=marker,tag=custom_8] data 8
+scoreboard players set @e[type=marker,tag=custom_9] data 9
+scoreboard players set @e[type=marker,tag=custom_10] data 10
+
 execute if score $custom_patterns data matches 1 store result score $do_custom_pattern_rand data run random value 1..3
 execute if score $custom_patterns data matches 2 run scoreboard players set $do_custom_pattern_rand data 3
 execute if score $custom_patterns data matches 1.. if score $do_custom_pattern_rand data matches 3 run scoreboard players set $rand data 0

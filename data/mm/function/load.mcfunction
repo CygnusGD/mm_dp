@@ -42,6 +42,7 @@ function mm:lobby/clear_tags
 
 function mm:game/setup/reset_pattern_markers
 
+forceload add 117 72 117 181
 function mm:pattern_editor/init
 
 schedule clear mm:game/timer

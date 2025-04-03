@@ -10,7 +10,7 @@ execute if score $life_count data matches 69420 run scoreboard players set $life
 execute at @s run playsound minecraft:ui.button.click master @s ~ ~ ~
 
 setblock 0 64 12 spruce_wall_sign[facing=north] replace
-setblock 0 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Lives:","clickEvent":{"action":"run_command","value":"/function mm:lobby/change_lives"}}','[{"score":{"name":"$life_count","objective":"data"}}]','{"text":""}']}} replace
+setblock 0 64 12 oak_wall_sign[facing=north]{front_text:{color:"white",has_glowing_text:1b,messages:['{text:""}','{text:"Lives:",click_event:{"action":"run_command",command:"/function mm:lobby/change_lives"}}','[{"score":{"name":"$life_count","objective":"data"}}]','{"text":""}']}} replace
 
 #yeah this is to avoid doing math
 execute if score $life_count data matches 10 as @a run attribute @s minecraft:max_health base set 20

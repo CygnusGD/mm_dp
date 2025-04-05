@@ -1,2 +1,2 @@
 execute positioned ~-1 ~5 ~3 run setblock ~ ~ ~ air
-$execute positioned ~-1 ~5 ~3 run setblock ~ ~ ~ oak_wall_sign[facing=west,waterlogged=false]{front_text:{color:"green",has_glowing_text:1b,messages:['{"text":""}','{"text":"Enabled","clickEvent":{"action":"run_command","value":"/function mm:pattern_editor/menu/disable {cp_id:$(cp_id)}"}}','{"text":""}','{"text":""}']},is_waxed:0b} replace
+$execute positioned ~-1 ~5 ~3 run setblock ~ ~ ~ oak_wall_sign[facing=west,waterlogged=false]{front_text:{color:"green",has_glowing_text:1b,messages:[{text:""},{text:"Enabled",click_event:{action:"run_command",command:"/function mm:pattern_editor/menu/disable {cp_id:$(cp_id)}"}},{text:""},{text:""}]},is_waxed:0b} replace

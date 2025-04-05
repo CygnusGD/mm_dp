@@ -18,4 +18,4 @@ execute if score $timer_master data matches 69420 run scoreboard players set $ti
 execute at @s run playsound minecraft:ui.button.click master @s ~ ~ ~
 
 setblock 1 64 12 spruce_wall_sign[facing=north] replace
-setblock 1 64 12 oak_wall_sign[facing=north]{front_text:{messages:['{"text":""}', '{"text":"Timer:","clickEvent":{"action":"run_command","value":"/function mm:lobby/change_timer"}}', '[{"score":{"name":"$timer_master","objective":"data"}},{"text":" seconds"}]', '{"text":""}'], has_glowing_text: true, color: "white"}} replace
+setblock 1 64 12 oak_wall_sign[facing=north]{front_text:{messages:[{text:""}, {text:"Timer:",click_event:{action:"run_command",command:"/function mm:lobby/change_timer"}}, [{score:{name:"$timer_master",objective:"data"}},{text:" seconds"}], {text:""}], has_glowing_text: true, color: "white"}} replace

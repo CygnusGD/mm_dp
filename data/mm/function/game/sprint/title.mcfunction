@@ -1,1 +1,1 @@
-$title @a[tag=!in_solo_game] actionbar {"color":"#4e5c24","text":"\uE0$(current_pattern)"}
+$title @a[tag=!in_solo_game] actionbar {color:"#4e5c24",text:"\uE0$(current_pattern)"}

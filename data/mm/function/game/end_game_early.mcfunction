@@ -24,4 +24,4 @@ scoreboard players reset @a[tag=!in_solo_game] end_game
 scoreboard players set $votes data 0
 scoreboard players set $eligible_voters data 0
 
-tellraw @a[tag=!in_solo_game] [{"text":"[ ","color":"gray","bold":false},{"text":"You voted to end the game.","color":"white","bold":false},{"text":" ]","color":"gray","bold":false}]
+tellraw @a[tag=!in_solo_game] [{text:"[ ",color:"gray",bold:false},{text:"You voted to end the game.",color:"white",bold:false},{text:" ]",color:"gray",bold:false}]

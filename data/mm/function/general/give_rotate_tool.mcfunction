@@ -1,1 +1,1 @@
-item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"text":"Hand Drill","color":"white","italic":false}',lore=['{"text":"Rotates pattern blocks","color":"gray","italic":false}'],custom_data={rotate_tool:1},item_model="mm:hand_drill",enchantment_glint_override=0b] 1
+item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={text:"Hand Drill",color:"white",italic:false},lore=[{text:"Rotates pattern blocks",color:"gray",italic:false}],custom_data={rotate_tool:1},item_model="mm:hand_drill",enchantment_glint_override=0b] 1

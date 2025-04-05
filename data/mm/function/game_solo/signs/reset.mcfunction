@@ -1,3 +1,3 @@
 fill 12 64 0 12 65 0 air
-setblock 12 65 0 oak_wall_sign[facing=west,waterlogged=false]{front_text:{color:"white",has_glowing_text:1b,messages:['{"text":""}','{"text":"Start Solo Game","clickEvent":{"action":"run_command","value":"/function mm:game_solo/attempt_start"}}','"(0/4)"','{"text":""}']},is_waxed:1b} replace
-setblock 12 64 0 minecraft:oak_wall_sign[facing=west,waterlogged=false]{back_text:{color:"black",has_glowing_text:0b,messages:['""','""','""','""']},front_text:{color:"red",has_glowing_text:1b,messages:['"⚠ Starting a"','"solo game will"','"remove you from"','"team ready! ⚠"']},is_waxed:1b}
+setblock 12 65 0 oak_wall_sign[facing=west,waterlogged=false]{front_text:{color:"white",has_glowing_text:1b,messages:[{text:""},{text:"Start Solo Game",click_event:{"action":"run_command",command:"/function mm:game_solo/attempt_start"}},"(0/4)",{text:""}]},is_waxed:1b} replace
+setblock 12 64 0 minecraft:oak_wall_sign[facing=west,waterlogged=false]{back_text:{color:"black",has_glowing_text:0b,messages:["","","",""]},front_text:{color:"red",has_glowing_text:1b,messages:["⚠ Starting a","solo game will","remove you from","team ready! ⚠"]},is_waxed:1b}
